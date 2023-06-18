@@ -1,0 +1,64 @@
+// 设置list的样式
+.list{
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(to right,#833ab4 0%,#fd1d1d 50%,#fcb045 100%);
+    margin: 100px auto;
+    border-radius: 10px;
+    font-family: A;
+    animation: rotate 3s ease-in-out ;
+    box-shadow: 10px 10px 20px 4px rgba(0, 0, 0, 0.582);
+}
+
+//设置list中的节点
+.list  p,
+.list h1{
+    text-align: center;
+    margin-top: 15px;
+    color: #fff;
+}
+
+.list h1{
+    font-weight: 600;
+}
+
+.list .list-1{
+    width: 500px;
+    height: 100px;
+    // background-color: red;
+    padding-top: 100px;
+}
+
+.list .list-2{
+    width: 500px;
+    height: 100px;
+    // background-color: red;
+    padding-top: 100px;
+}
+
+//字体设置
+@font-face {
+    font-family: A;
+    src: url(../font/LXGWWenKaiMono-Regular.ttf);
+}
+
+//卡片动画设置
+@keyframes rotate{
+    0%{
+        transform: translateY(550px);
+    }
+    10%{
+        transform: rotate(180deg);
+    }
+    30%{   
+        transform: translateY(-550px);
+    }
+
+}
+
+//设置返回主页
+.list .iconfont{
+    font-size: 50px;
+    position: absolute;
+    color: #fff;
+}

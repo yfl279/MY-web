@@ -1,0 +1,259 @@
+
+.movie{
+    width: 100%; 
+    height: 700px;
+    // background-color: rgba(132, 136, 136, 0.61);
+    // margin: 0 auto;
+}
+
+.movie .white{
+    font-size: 100px;
+    text-align: center;
+    font-weight: 600;
+    background-image: url(../img/绝命毒师.png);
+    background-size: 27%;
+    background-position:left center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.movie2{
+    width: 100%;
+    height: 700px;
+    // border: 1px solid  rgb(0, 255, 30);
+
+}
+
+
+//星际穿越
+.movie2 .star{
+    font-size: 100px;
+    text-align: center;
+    font-weight: 600;
+    background-image: url(../img/星际穿越.jpg);
+    background-size: 27%;
+    background-position: center right;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 50px;
+}
+
+
+
+.movie .collect{
+    width: 1500px;
+    height: 300px;
+    // border: 2px solid;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box{
+    width: 200px;
+    height:300px;
+    // border: 1px solid red;
+    padding-top: 90px;
+    position: relative;
+    transition: all 1s;
+    padding-top: 0px;
+}
+
+.box .xingxi2{
+    position: absolute;
+    width: 200px;
+    height: 180px;
+    background-color: rgb(136, 143, 135);
+    border-radius: 10px;
+    bottom: 0px;
+    left: 0px;
+    transition: all 1s;
+    z-index: -1;
+}
+
+
+//星际穿越的迅雷图标
+.box .xingxi2 img{
+    right: 0;
+    position: absolute;
+    width: 30px;
+    height: auto;
+}
+
+.movie2 .box{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.collect img,
+.movie2 img{
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    // background-color: red;
+}
+
+.collect li{
+    // display: inline;
+    // display: flex;
+    // margin: 0px 45px;
+    // background-color: #bfa;
+    position: relative;
+    cursor: pointer;
+}
+
+.first-season{
+    transition: all 1s;
+    animation: translation 2s;
+}
+
+// 小卡片
+.first-season .xingxi{
+    position: absolute;
+    width: 200px;
+    height: 180px;
+    background-color: rgb(136, 143, 135);
+    border-radius: 10px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+    transition: all 1s;
+    cursor:default;
+}
+
+.first-season:hover,
+.box:hover{
+    transform: translateY(-120px);
+    transition: all 1s;
+}
+
+.first-season:hover .xingxi,
+.box:hover .xingxi2{
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, .5);
+    transition: all 1s;
+    transform: translateY(180px);
+}
+
+
+.first-season .xingxi h1,
+.xingji{
+    font-weight: 600;
+    text-align: center;
+    padding-top: 15px;
+    color: greenyellow;
+}
+
+
+.first-season .xingxi p,
+.from{
+    text-align: center;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 10px;
+}
+
+// 第一季的按钮
+.first-season .xingxi .set,
+.set2{
+    width: 199px;
+    height: 100px;
+    // border: 1px solid;
+    margin-top: 24px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+//迅雷图标
+.set .xunlei{
+    width: 30px;
+    height:auto;
+    position: absolute;
+    right: 10px;
+    top: -40px;
+}
+
+// 1~7集
+.first-season .xingxi .set a{
+    width: 50px;
+    height: 20px;
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+//星际穿越的按钮
+.xingxi2 a{
+    width: 50px;
+    height: 20px;
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.first-season .xingxi .set a:hover,
+.box a:hover{
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, .5);
+    color: black;
+    background-color: #fff;
+    transition: all 0.4s;
+}
+
+//设置第二,三，四，五季的按钮
+.first-season2  .xingxi .set a,
+.first-season3  .xingxi .set a,
+.first-season4  .xingxi .set a,
+.first-season5  .xingxi .set a{
+    width: 38px;
+}
+
+// 给每个卡片设置延时
+.first-season2{
+    animation: translation 2.2s;
+}
+
+.first-season3{
+    animation: translation 2.4s;
+}
+
+.first-season4{
+    animation: translation 2.6s;
+}
+
+.first-season5{
+    animation: translation 2.7s;
+}
+
+//第五季，按钮有溢出需要调整
+.first-season5 .xingxi .set{
+    margin-top: 17px;
+    // border: 1px solid;
+}
+
+// 设置绝命毒师，开场动画
+@keyframes translation{
+    0%{
+        transform: translateX(600px);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+

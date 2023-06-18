@@ -1,0 +1,291 @@
+//字体设置
+@font-face{
+    font-family: A;
+    src: url(../font/LXGWWenKaiMono-Regular.ttf);
+}
+//字体设置
+@font-face{
+    font-family: B;
+    src: url(../font/翩翩体-简.ttf);
+}
+
+//页面鼠标设置
+html{
+    cursor: url(../img/pointer-hand.svg),pointer;
+}
+
+//对a链接鼠标设置
+a{
+    cursor: url(../img/pointer-hand.svg),pointer;
+}
+
+// 导航栏设置
+.head{
+    width: 1500px;
+    height: 50px;
+    // border: 2px solid;
+    line-height: 50px;
+    margin: 0 auto;
+}
+
+//链接设置
+.head a{
+    color: #ffffffb1;
+    text-decoration: none;
+    font-family:A,'ATimes New Roman', Times, serif;
+    font-weight: 600;
+    font-size: larger;
+    // background-color: green;
+    padding: 10px;
+    border: 3px solid transparent;
+    // border-radius: 30px;
+    border-radius: 10px;
+}
+
+//鼠标移动到连接上的变化
+.head a:hover{
+    color: black;
+    // background: linear-gradient(to right,#FFEFBA 0%, #FFFFFF 100%);
+    border: 3px solid rgba(88, 83, 83, 0.783);
+    // border-left: none;
+    // border-right: none;
+    background-color: #ffffffc7;
+    transition: all 1s;
+}
+
+//导航栏设置
+.head-bar{
+    display: flex;
+    justify-content: space-around;
+    width:1400px;
+    height: 50px;
+    // border: 1px solid  rgba(0, 0, 0, 0.667);
+    float: right;
+    background-color: rgba(0, 0, 0, 0.667);
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+//LOGO设置
+.logo img{
+    width: 100px;
+    position: absolute;
+    top: -10px;
+    animation: an 3s ease-in-out;
+    // transition: all 3s;
+}
+
+//logo动画设置
+@keyframes an{
+    0%{
+        margin-top: -65px;
+    }
+
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+//打字机位置设置
+.home{
+    margin: 0 auto;
+    // background-color: #bfa;
+    text-align: center;
+    margin-top: 50px;
+    height: 500px;
+    width: 700px;
+    // border: 1px solid;
+    position: relative;
+}
+
+.intro{
+    background-color: rgb(148, 148, 148);
+    height: 10vh;
+    // line-height: 10vh;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 3px rgba(88, 83, 83, 0.783);
+}
+
+.intro .name{
+    background-image: url(../img/apple渐变色3.png);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    // font-size: 30px;
+}
+
+.content{
+    width: 45ch;
+    animation:c 7s steps(22), blink .4s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid;
+    // border: 1px solid;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFF;
+}
+
+@keyframes c{
+    from{
+        width: 0;
+    }
+}
+
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+
+//简介设置
+.home .jianjie{
+    background-color: #FFF;
+    width: 399px;
+    border-radius: 10px;
+    margin: 0 auto;
+    height: 200px;
+    margin-top: 20px;
+    padding-top: 20px;
+    float: left;
+    // border: 2px solid;
+    box-shadow: 2px 2px 10px 3px rgba(88, 83, 83, 0.783);
+    position: relative;
+}
+
+.home .jianjie p{
+    font-size: 20px;
+    margin: 0px 20px 0px 20px;
+    font-family: A;
+    line-height:30px;
+    font-weight: 700;
+}
+
+//资源
+.home .resource{
+    width: 230px;
+    height: 400px;
+    // border: 2px solid;
+    float: right;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 3px rgba(88, 83, 83, 0.783);
+}
+
+
+.resource .resource2{
+    display: flex;
+    justify-content: space-around;
+    // border-bottom: 1px solid;
+    margin-top: 10px;
+    // background-color: rgba(255, 0, 0, 0.413);
+    margin-bottom: 30px;
+}
+
+.resource .resource2 img{
+    width: 40px;
+    margin-top: 10px;
+    // background-color: aquamarine;
+}
+
+.resource2 .icon-bilbili{
+    font-size: 50px;
+    color: rgb(252, 151, 168);
+    // background-color: aquamarine;
+}
+
+.resource2 a{
+    text-decoration: none;
+}
+
+.resource2 p{
+    font-size: 10px;
+    color: black;
+    font-weight: 600;
+}
+
+.resource2 div{
+    transition: all 0.7s;
+}
+
+.resource2 div:hover{
+    background-color: rgba(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px 1px rgba(47, 47, 47, 0.667);
+    transition: all 0.5s;
+}
+
+//社交
+.home .social{
+    width: 450px;
+    height: 170px;
+    // border: 1px solid;
+    position: absolute;
+    bottom: 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px 1px rgba(47, 47, 47, 0.667);
+    overflow: hidden;
+}
+
+.social h1{
+    // background-color: rgba(255, 0, 0, 0.356);
+    font-size: larger;
+    font-weight: 600;
+    margin-top: 20px;
+    font-family: B;
+}
+
+.social .social2{
+    // border: 1px solid red;
+    // background-color: rgb(153, 153, 153);
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+
+.social .social2 a{
+    text-decoration: none;
+    animation: roll 0.4s infinite ease-in-out alternate-reverse;
+}
+
+
+.social .social2 i{
+    font-size: 45px;
+    // background-color: red;
+    padding: 5px;
+    border-radius: 10px;
+    // border: 1px solid rgb(153, 153, 153);
+    color:rgb(153, 153, 153);
+    box-shadow: 2px 2px 6px 1px rgba(47, 47, 47, 0.667);
+}
+
+.social2 .icon-github-fill:hover{
+    // border: 1px solid rgb(153, 153, 153);
+    color: black;
+}
+
+.social2 .icon-youxiang:hover{
+    color: orange;
+}
+
+.social2 .icon-douyin:hover{
+    color: black;
+}
+
+.social2 .icon-zhihu:hover{
+    color: rgb(63, 63, 235);
+}
+
+@keyframes roll{
+    0%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(-10deg);
+    }
+}
